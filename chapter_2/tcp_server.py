@@ -5,7 +5,7 @@ import socket
 import threading
 
 ip = '0.0.0.0'
-port = int(input("Insert the port: (The default server is bind:0.0.0.0)"))
+port = int(input("Insert the port, (The default server is bind:0.0.0.0):  "))
 
 def main():
     server = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
