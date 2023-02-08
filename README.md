@@ -4,6 +4,8 @@ is, how to create an tools for network purposes.
 
 Detail: Additional code to the original.
 
+if you like this repository, give me a star, that will help me to bring more content.
+
 
 ## Chapter 2
 ### tcp_client:
