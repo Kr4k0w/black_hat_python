@@ -9,7 +9,7 @@ Detail: Additional code to the original.</p>
 <br></br>
 <h2> Chapter 2 :open_book:</h2>
 <h3>:pushpin: tcp_client:</h3>
-<p>This client can be used to test for services, send garbage data, fuzz, or perform any number of other tasks.</p>
+<p style="background:blue;">This client can be used to test for services, send garbage data, fuzz, or perform any number of other tasks.</p>
 <br></br>
 <h3>:pushpin: udp_client:</h3>
 <p>Does the same thing what the TCP, but use the UDP protocol.</p>
