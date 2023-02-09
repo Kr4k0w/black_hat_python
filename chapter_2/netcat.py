@@ -1,10 +1,10 @@
-import argparse     # https://docs.python.org/3.10/library/argparse.html?highlight=argparse
-import socket       # https://docs.python.org/3.10/library/socket.html?highlight=socket#module-socket
-import shlex        # https://docs.python.org/3.10/library/shlex.html?highlight=shlex
-import subprocess   # https://docs.python.org/3.10/library/subprocess.html?highlight=subprocess
-import sys          # https://docs.python.org/3.10/library/subprocess.html?highlight=subprocess
-import textwrap     # https://docs.python.org/3.10/library/subprocess.html?highlight=subprocess
-import threading    # https://docs.python.org/3.10/library/threading.html?highlight=threading#module-threading
+import argparse     
+import socket       
+import shlex        
+import subprocess   
+import sys          
+import textwrap     
+import threading    
 
 
 class NetCat:
@@ -13,12 +13,10 @@ class NetCat:
         self.buffer = buffer
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        # SO_REUSEADDR = http://www.unixguide.net/network/socketfaq/4.11.shtml
-        # SOL_SOCKET = https://www.gnu.org/software/libc/manual/html_node/Socket_002dLevel-Options.html
-            # The SOL_SOCKET link is a good explination for both options
+        
 
 
-    #! This was a bug in the book, the book did not have the "self" argument first
+   
     def execute(self, cmd):
         cmd = cmd.strip()
         if not cmd:
@@ -95,10 +93,8 @@ class NetCat:
             cmd_buffer = b''
             while True:
                 try:
-                    #! Bug in the books code, had to decode the buffer 
                     prompt = 'NetCat# > '
                     prompt = prompt.encode()
-                    #! The send needed to be encoded
                     client_socket.send(prompt)
                     while '\n' not in cmd_buffer.decode():
                         cmd_buffer += client_socket.recv(64)
