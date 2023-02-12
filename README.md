@@ -17,6 +17,9 @@
   <br></br>
   <h3>Netcat.py</h3>
   <p>Based on the netcat tool</p>
+  <br></br>
+  <h3>TCP proxy</h3>
+  <p>This can be used to see traffic on your network</p>
 
 </div>
 
