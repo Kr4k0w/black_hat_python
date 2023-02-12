@@ -5,7 +5,18 @@
 <p><b>PS.:</b> We created this repository based on many projects what using python code, focused to bring many tools for pentest and ethical hacking.
 
 <h2>Tools</h2>
-  <h3></h3>
+  <h3>TCP Client</h3>
+  <p>This tool can be used to bring a header of an HTTP request.
+  <br></br>
+  <br></br>
+  <h3>TCP Server</h3>
+  <p>This tool can be used to test the traffic in an network.</p>
+  <br></br>
+  <h3>UDP client</h3>
+  <p>Does the same thing what TCP, but uses the UDP protocol.</p>
+  <br></br>
+  <h3>Netcat.py</h3>
+  <p>Based on the netcat tool</p>
 
 </div>
 
