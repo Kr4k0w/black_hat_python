@@ -24,9 +24,6 @@ def main():
   user = input('Conta de usuário para o Bruteforce:');
   arquivo = open("password.txt",'r');
   for password in arquivo.readlines():
-    try:
-      child = connect(user,host,password);
-      print('[+] Senha Encontrada:' + password);
-    except:
-        print('[-] Senha Errada:' + password);
+    password = password.strip('\n');
+    print(password);
 main();
