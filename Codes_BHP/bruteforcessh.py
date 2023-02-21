@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 import pexpect;
-
+PROMPT = ['#','>>','>','\$'];
 def connect(user,host,password,PROMPT):
   ssh_newkey = ('Você deseja continuar conectado?');
   connStr = ('ssh', user, '@', host);
@@ -17,7 +17,7 @@ def connect(user,host,password,PROMPT):
       print('[- Error ao Conectar]');
       return
   child.sendline(password);
-  child.expect(PROMPT);
+  child.expect(PROMPT,timeout=0.5);
   return child;
 def main():
   host = input('Insira o endereço ip do alvo para o bruteforce:');
