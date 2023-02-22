@@ -26,5 +26,8 @@
   <br><br>
   <h3>Basic Brute forcing to SSH </h3>
   <p>This basic bruteforce script is used with a wordlist of passwords for connection attempts to the ssh client.</p>
+  <br><br>
+  <h3>Basic Attack on FTP Service</h3>
+  <p>Create this script for attacking servers that use the FTP protocol for sending files.</p>
 </div>
 
