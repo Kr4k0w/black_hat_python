@@ -29,5 +29,8 @@
   <br><br>
   <h3>Basic Attack on FTP Service</h3>
   <p>Create this script for attacking servers that use the FTP protocol for sending files.</p>
+  <br><br>
+  <h3>Hash Generator and Basic Cracking</h3>
+  <p>I have created the basic scripts for hash generation and hash cracking using wordlist with random passwords.</p>
 </div>
 
